@@ -298,6 +298,7 @@ if selected == "Dashboard":
                 # ab file ka data screen pe dikhne lagega
                 df = preprocessor.preprocess(data)
                 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+                nltk.download('vader_lexicon')
 
 
                 def sentiment(d):
