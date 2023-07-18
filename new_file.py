@@ -271,7 +271,7 @@ if selected == "Dashboard":
         return message
 
 
-    st.title("chatBot")
+    st.title("User-User Comparison")
 
     if 'generated' not in st.session_state:
         st.session_state['generated'] = []
