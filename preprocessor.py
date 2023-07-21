@@ -37,6 +37,8 @@ def preprocess(data):
     df['month'] = df['Date'].dt.month_name()
     df['month_num'] = df['Date'].dt.month
     df['day'] = df['Date'].dt.day
+    df.set_index('Date', inplace=True)
+
     df['day_name'] = df['Date'].dt.day_name()
     df['hour'] = df['Date'].dt.hour
     df['minute'] = df['Date'].dt.minute

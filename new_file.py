@@ -147,6 +147,7 @@ if selected == "Home":
                     fig = px.bar(af, y=x.values, x=x.index, color=x)
                     fig
                     #    with col2:
+
                     st.markdown("<h3 style='text-align: center; color: blue;'>Most Neutral Users</h3>",
                                 unsafe_allow_html=True)
                     af = df['user'][df['value'] == 0]
@@ -541,6 +542,7 @@ if selected == "Dashboard":
                     fig.update_traces(textposition='inside', textinfo='percent')
                     fig.update_layout(width=350, height=350)
                     fig
+
                 col1, col2 = st.columns(2)
                 with col1:
                     try:
