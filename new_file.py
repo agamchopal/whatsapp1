@@ -1,5 +1,8 @@
 import nltk
 nltk.download('all')
+nltk.download('punkt')  # For tokenization
+nltk.download('stopwords')  # For stopwords
+
 
 import streamlit as st
 import pandas as pd
